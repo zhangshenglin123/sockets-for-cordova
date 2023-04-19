@@ -35,7 +35,7 @@ int const WRITE_BUFFER_SIZE = 10 * 1024;
 
 - (void)open:(NSString *)host port:(NSNumber*)port {
     
-    NSLog(@"Setting up connection to %@ : %@", host, [port stringValue]);
+    // NSLog(@"Setting up connection to %@ : %@", host, [port stringValue]);
     
     if (![self isIp:host]) {
         host = [self resolveIp:host];
